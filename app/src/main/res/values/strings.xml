@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">2_lab_Gustas_Ramanauskas</string>
+    <string-array name="choices_array">
+        <item>Words</item>
+        <item>Symbols</item>
+    </string-array>
+</resources>
