@@ -12,6 +12,6 @@ public class WordCounter {
         String text = edUserInput.getText().toString();
         text = text.replace("\n", " ");
         String[] textArray = text.split(" ");
-        return tvMain.setText("Words: " + textArray.length);
+        return textArray.length;
     }
 }
