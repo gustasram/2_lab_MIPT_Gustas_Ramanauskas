@@ -6,11 +6,11 @@ import android.widget.TextView;
 
 public class WordCounter {
 
-    static TextView tvMain;
-    static EditText edUserInput;
+    //static TextView tvMain;
+    // EditText edUserInput;
     public static int countWords(String phrase) {
-        String text = edUserInput.getText().toString();
-        text = text.replace("\n", " ");
+        //String text = edUserInput.getText().toString();
+        String text = phrase.replace("\n", " ");
         String[] textArray = text.split(" ");
         return textArray.length;
     }
