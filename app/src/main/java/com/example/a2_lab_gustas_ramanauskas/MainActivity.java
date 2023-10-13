@@ -42,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnCountClick(View view){
         String selectedItem = this.spSelectOptions.getSelectedItem().toString();
-        if(selectedItem.equalsIgnoreCase("Symbols")) {
+
+        if (edUserInput.getText().toString().matches("")){
+            Toast.makeText(this, "Text Box is Empty", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else if(selectedItem.equalsIgnoreCase("Symbols")) {
             int result = TextCounter.countSymbols(this.edUserInput.getText().toString());
             Log.i("CountResult", String.valueOf(result));
             this.tvMain.setText(String.valueOf(result));
